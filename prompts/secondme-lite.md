@@ -1,6 +1,6 @@
 # SecondMe Lite｜自然对话提示词
 
-复制下方内容到你日常使用的 AI 对话工具即可开始。**不要把虚构示例放进个人记忆。**
+复制下方内容到你日常使用的 AI 对话工具即可开始。**完全不知道接下来问什么、希望逐步形成专属框架？优先使用 [Guided SecondMe](guided-exploration.md)。想产生完整 Output 报告则使用 [Full Output](full-report.md)。****不要把虚构示例放进个人记忆。**
 
 ---
 
