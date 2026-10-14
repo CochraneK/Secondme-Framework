@@ -29,6 +29,17 @@
 - [x] 可改报告/个人风格模板及完全虚构的新手教学流程
 - [x] 通过新版官方 Markdown manifest 允许现有私人副本审核新增方法
 
+## 新增 · Agent 与 WorkBuddy 试验性接口
+
+- [x] AGENTS.md 跨工具工作协定和 WorkBuddy 项目级子代理
+- [x] 1 位主理人 + 6 位按需独立专家，支持单 Agent 退化运行
+- [x] 两项带 SKILL.md 的项目 Skill
+- [x] WorkBuddy Expert Team ZIP 本地构建器（含 manifest、settings、agent、skill 与 512px 头像）
+- [x] 离线结构与 ZIP 完整性检查
+- [ ] 在实际 WorkBuddy 客户端/开放平台完成导入与多代理调用的端到端实测
+- [ ] 可授权、可撤销的真实长期私有资料检索/写入 Agent runtime
+- [ ] 自愿启用的复盘自动化与报告版本差分
+
 ## 候选后续（均未承诺）
 
 - [ ] 更友好的 Private Template 初始化向导
