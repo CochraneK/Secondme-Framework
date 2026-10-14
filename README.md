@@ -17,15 +17,24 @@
   <a href="PRIVACY.md">隐私原则</a>
 </p>
 
-<p align="center"><sub>Experimental v0.3 · 中文优先 · MIT License · Privacy-first</sub></p>
+<p align="center"><sub>Experimental v0.4 · 中文优先 · MIT License · Privacy-first</sub></p>
 
 ---
+
+## 新版重点：不懂怎么问，也能开始
+
+**[引导式探索（推荐新手）](prompts/guided-exploration.md)** → **[AI 帮你发现下一问](prompts/next-questions.md)** → **[生成完整 Output 报告](prompts/full-report.md)** → **[增量更新与纠错](prompts/update-output.md)**。
+
+不要求先有心理学知识、固定人生目标或完整日记；问题随这个人的回答调整。报告允许专属章节、丰富长文、相互矛盾的解释和证据不足的留白。**可共享分析方法，不强行共享人物内容结构。**
+
+[从零到长期报告的完整路径](docs/JOURNEY.md) · [个人化建模原则](framework/person_specific_modeling.md) · [完整 Output 协议](framework/output_reports.md)
 
 ## 60 秒开始
 
 | 你的目标 | 推荐入口 |
 | --- | --- |
-| **先试着和 AI 了解自己** | [复制自然对话提示词](prompts/secondme-lite.md)，从一件具体小事聊起 |
+| **从零开始，不知道该问什么** | [引导式探索提示词](prompts/guided-exploration.md)：AI 每次根据真实回答选择一个问题 |
+| **已有材料，想要全量分析** | [完整 Output 报告提示词](prompts/full-report.md)，支持充分长文、优缺点、反证、纵向修订和专属章节 |
 | **建立长期个人档案** | [Use this template 创建自己的 Private 仓库](https://github.com/CochraneK/Secondme-Framework/generate)，在 `my/` 保存本人资料，`custom/` 保存个性化提示词 |
 | **今后获得新方法** | 在私人仓库启用可选的框架更新工作流，查看并合并更新 PR；不自动覆盖个人资料 |
 
@@ -87,6 +96,20 @@ SecondMe 希望做的，是把**生活中的真实材料**转化为**有来源�
 这些是「生活资料的可选专题」，**不是另外 20 种人格因子**。所有人拥有相同的空白容器，但每个人收藏的人物、喜欢的角色、经历和决定均来自自己；`EMPTY` 不代表该人缺少这一面。
 
 
+## 从聊天到真正可更新的个人 Output
+
+| 想实现的目标 | 已提供的方法 |
+| --- | --- |
+| 我完全不知道该问什么 | [自适应发现与提问路由](framework/adaptive_discovery.md) · [引导 prompt](prompts/guided-exploration.md) |
+| 我想知道有没有忽视的重要问题 | [问题发现 prompt](prompts/next-questions.md) |
+| 我希望分析足够深，不止贴人格标签 | [个体优先](framework/person_specific_modeling.md) · [纵向推理与竞争解释](framework/longitudinal_reasoning.md) |
+| 我想区别喜欢、需要、责任和决定 | [八种判断镜头（非量表）](framework/judgment_lenses.md) |
+| 我需要可长期维护的全部 Output | [报告方法](framework/output_reports.md) · [Full Output prompt](prompts/full-report.md) · [可改模板](templates/OUTPUT_REPORT_TEMPLATE.md) |
+| 我带来新经历、想纠正旧报告 | [增量更新 prompt](prompts/update-output.md) |
+| 我想接入 AI-Persona 的规范 | [类型、来源和选择性本体映射](framework/semantic_interoperability.md) |
+
+**有方法，不代表自动完成：** 当前版本不自动读取跨会话历史、不自动分析整个私人仓库、不替用户部署长驻 Agent，也不保证私人全量报告具有科学测量效度。公开仓库只提供通用方法、提示词、空模板和独立虚构示例。
+
 ## 方法与理论
 
 面对不同问题，SecondMe 不会用某一个理论解释所有人。下面是**可选的参考池**，并不代表已部署自动打分、模型训练或完成临床效度验证。
@@ -116,9 +139,9 @@ SecondMe 希望做的，是把**生活中的真实材料**转化为**有来源�
 
 **路径 A · 五分钟体验**
 
-1. 打开 [SecondMe Lite 提示词](prompts/secondme-lite.md)，复制到日常使用的 AI 聊天工具。
-2. 从最近一件真实的小事聊起，不用做长问卷。
-3. 让 AI 区分事实、解释、反例与未知；发现不准确就直接纠正。
+1. 打开 [引导式探索提示词](prompts/guided-exploration.md)（或更简短的 [Lite](prompts/secondme-lite.md)），复制到日常使用的 AI 聊天工具。
+2. 从最近一件真实的小事聊起，不用做长问卷。遇到不知道如何继续时，让 AI 使用 [下一问机制](prompts/next-questions.md)。
+3. 让 AI 区分事实、解释、反例与未知；发现不准确就直接纠正。想要报告时再使用 [Full Output](prompts/full-report.md)，选择性存入 Private 仓库。
 
 **路径 B · 建立长期私有模型**
 
@@ -151,9 +174,9 @@ SecondMe 希望做的，是把**生活中的真实材料**转化为**有来源�
 
 ```text
 SecondMe-Framework/
-├── prompts/       自然对话与回顾提示词
-├── framework/     12维本体 + 20类生活专题、证据、方法与更新
-├── templates/     个人、角色、偏好、关系、文化、梦境、决策等空白模板
+├── prompts/       Lite、引导探索、发现问题、全量 Output、增量更新
+├── framework/     12维可选地图 + 20类专题、动态推理、个性化、Output
+├── templates/     私人生活专题、风格选择与 Output 报告空白模板
 ├── examples/      独立虚构的教学材料（非个人记忆）
 ├── docs/assets/   中文 SVG 框架图及视觉素材
 ├── docs/        首次使用指南、更新协议与框架演化规则
@@ -176,7 +199,7 @@ SecondMe-Framework/
 
 这个仓库**不承载真实的 SecondMe 个人档案**。请勿通过公开 Issue、PR 或示例提交真实聊天、健康资料、亲密关系记录或改名后的真实案例。详见 [PRIVACY.md](PRIVACY.md) 和 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-当前 **v0.3** 提供了 12 维本体、20 类生活专题、提示词、方法文档、空白模板、虚构教学示例，以及可选的框架版本检查与更新 PR；**尚未实现**自动跨会话记忆、数据库、可视化交互界面、正式测量或数字人运行时。后续想法见 [ROADMAP.md](ROADMAP.md)。
+当前 **v0.4** 提供了 12 维本体、20 类生活专题、提示词、方法文档、空白模板、虚构教学示例，以及可选的框架版本检查与更新 PR；**尚未实现**自动跨会话记忆、数据库、可视化交互界面、正式测量或数字人运行时。后续想法见 [ROADMAP.md](ROADMAP.md)。
 
 ---
 
