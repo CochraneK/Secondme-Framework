@@ -29,6 +29,17 @@
 
 [从零到长期报告的完整路径](docs/JOURNEY.md) · [个人化建模原则](framework/person_specific_modeling.md) · [完整 Output 协议](framework/output_reports.md)
 
+## Agent / WorkBuddy 专家团（可选）
+
+除了直接复制提示词，现在还提供 **[SecondMe Agent 与 WorkBuddy 专家团指南](docs/WORKBUDDY_AGENT_GUIDE.md)**：
+
+- `AGENTS.md`：跨工具协作约定。
+- [7 位项目级 Agents](.codebuddy/agents/)：1 位主理人 + 探索、证据、反证、纵向、报告、隐私 6 位按需专家。
+- [两项 Skills](.codebuddy/skills/)：自适应探索和完整 Output。
+- [WorkBuddy 专家团 ZIP 构建器](scripts/package_workbuddy_team.py)：`python scripts/package_workbuddy_team.py` 即可本地打包所需 `plugin.json`、Agent、Skill 与 512px 抽象头像。
+
+**已提供代码与格式校验；并不代表专家团已自动安装在你的 WorkBuddy、通过产品端导入或完成市场上架。** 专家合作只有运行时确实调度了多个 Agent 才称为“多 Agent”；普通对话无需召唤全队。个人资料始终由使用者选择存储与授权。
+
 ## 60 秒开始
 
 | 你的目标 | 推荐入口 |
