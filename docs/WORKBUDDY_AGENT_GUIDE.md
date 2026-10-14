@@ -16,6 +16,14 @@
 
 官方参考：[WorkBuddy 项目配置](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Project)、[CodeBuddy 子代理](https://www.workbuddy.cn/docs/cli/sub-agents)、[WorkBuddy Expert Team](https://open.workbuddy.cn/en/docs/expert-team)、[WorkBuddy Skills](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)。
 
+## 现在可以直接拿到自动构建的 ZIP
+
+[查看最新一次成功打包的 GitHub Actions](https://github.com/CochraneK/Secondme-Framework/actions/workflows/workbuddy-package.yml)。进入成功的 Workflow Run，在页面底部 **Artifacts** 下载 `secondme-workbuddy-team`；解压 GitHub Artifact 外层压缩包后，会看到实际要导入的 `secondme-expert-team.zip`。
+
+首次构建已在 [2026-10-14 的工作流](https://github.com/CochraneK/Secondme-Framework/actions/runs/38576386223) 实际通过，成功上传 1 个产物。GitHub artifact 有保存期限；若过期，可在有权限的情况下重运行 workflow 或本地运行打包脚本。
+
+**不要把 GitHub 构建成功误作 WorkBuddy 应用端导入成功**；当前仍需要在真实客户端测试。
+
 ## 2. 方案 A：在自己电脑的 WorkBuddy 项目中使用（优先推荐）
 
 1. 把此公开模板作为一个**新的 Private 工作区**使用（或在安全、经授权的文件夹里打开模板副本）。
