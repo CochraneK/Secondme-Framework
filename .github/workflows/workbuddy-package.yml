@@ -1,0 +1,48 @@
+name: SecondMe · WorkBuddy Expert Team Package
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".codebuddy/agents/**"
+      - ".codebuddy/skills/**"
+      - "scripts/package_workbuddy_team.py"
+      - "tests/test_workbuddy_package.py"
+      - ".github/workflows/workbuddy-package.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public framework
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Validate team package
+        run: python3 -m unittest discover -s tests -p test_workbuddy_package.py -v
+      - name: Build WorkBuddy team ZIP
+        run: python3 scripts/package_workbuddy_team.py
+      - name: Verify ZIP without inspecting private files
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from zipfile import ZipFile
+          path = Path("dist/secondme-expert-team.zip")
+          with ZipFile(path) as z:
+              names = set(z.namelist())
+              config = json.loads(z.read(".codebuddy-plugin/plugin.json"))
+              assert config["expertType"] == "team"
+              assert len(config["members"]) == 7
+              assert len([x for x in names if x.startswith("avatars/")]) == 8
+              assert not any(x.startswith(("my/", "custom/", ".private/")) for x in names)
+          print("WorkBuddy ZIP safe/public-only structure: OK")
+          PY
+      - name: Upload WorkBuddy ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: secondme-workbuddy-team
+          path: dist/secondme-expert-team.zip
+          if-no-files-found: error
+          retention-days: 30
