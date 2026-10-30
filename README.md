@@ -29,6 +29,14 @@
 
 [从零到长期报告的完整路径](docs/JOURNEY.md) · [个人化建模原则](framework/person_specific_modeling.md) · [完整 Output 协议](framework/output_reports.md)
 
+## 双向问题系统：AI 问我，我问 AI
+
+**[框架与评估规则](framework/two_way_question_system.md)** · **[AI → 用户｜Discover Me](questions/discover-me.md)** · **[用户 → AI｜Understand Me](questions/understand-me.md)** · **[可复制对话提示词](prompts/two-way-questions.md)**
+
+- **Discover Me**：6 个起步候选题 + 18 个按需补充题；根据用户的真实经历、知识缺口和意愿每次只选一个，不强迫填问卷。
+- **Understand Me**：6 个核心自我探索题 + 18 个深入题；要求 AI 用真实来源回答，寻找反证、竞争解释与可修订处。
+- **双向循环**：体验 → 证据 → 暂定理解 → 用户质疑 → 重新追问；**不是“六题测出人格”的科学量表**。题目和方法均可公开复用，私人材料留在用户自己选择的私有空间。
+
 ## Agent / WorkBuddy 专家团（可选）
 
 除了直接复制提示词，现在还提供 **[SecondMe Agent 与 WorkBuddy 专家团指南](docs/WORKBUDDY_AGENT_GUIDE.md)**：
