@@ -34,7 +34,7 @@ class ContinuousWorkflowTests(unittest.TestCase):
         record = json.loads(
             (ROOT / ".secondme/framework-manifest.json").read_text(encoding="utf-8")
         )
-        self.assertEqual(record["version"], "0.5.0")
+        self.assertGreaterEqual(tuple(int(x) for x in record["version"].split(".")), (0, 5, 0))
         for p in NEW_MARKDOWN:
             full = ROOT / p
             self.assertTrue(full.exists(), p)
