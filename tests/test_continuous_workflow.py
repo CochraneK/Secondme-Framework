@@ -75,5 +75,11 @@ class ContinuousWorkflowTests(unittest.TestCase):
         self.assertIn("分享", deck)
 
 
+    def test_future_runtime_is_explicitly_not_yet_available(self):
+        roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+        self.assertIn("v0.6 候选", roadmap)
+        self.assertIn("尚未实现", roadmap)
+        self.assertIn("可编辑 PPTX", roadmap)
+
 if __name__ == "__main__":
     unittest.main()
