@@ -70,7 +70,7 @@ class ContinuousWorkflowTests(unittest.TestCase):
         self.assertIn("RETRACTED", correction)
         self.assertIn("speaker", correction)
         self.assertIn("NO_MODEL_CHANGE", pipeline)
-        self.assertIn("有授权", pipeline)
+        self.assertIn("获授权", pipeline)
         self.assertIn("可编辑", deck)
         self.assertIn("分享", deck)
 
