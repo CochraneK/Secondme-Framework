@@ -31,6 +31,14 @@
 
 **已有的 Discover Me × Understand Me 双向题库**仍在独立 [Draft PR #1](https://github.com/CochraneK/Secondme-Framework/pull/1) 审核中，不能当成已合并的正式功能；v0.5 的问题 Atlas 方法可独立使用，未来再做衔接。
 
+## v0.5.1 候选：从 HopeBot 研究提炼可选择的澄清机制
+
+公开研究 [HopeBot](https://doi.org/10.1371/journal.pdig.0001446) 启发了一个严格但轻量的原则：**自由叙述不必填表，但只有澄清过、来源可核查的信息才能进入长期结论**。SecondMe **不移植其 PHQ-9 临床筛查功能**，也不默认把聊天转成问卷。
+
+- [自愿澄清与结构化证据](framework/consentful_conversational_structuring.md)：必要时才问一个中性问题；拒答、未知和否定不得混作零值。
+- [可复制的“先澄清，再下结论”提示词](prompts/clarify-before-claim.md)。
+- [HopeBot 仓库与论文的独立比较、适用边界](docs/research/HOPEBOT_RESEARCH_NOTE_2026.md)：区别早期样本、正式研究与仓库当前代码，不把量表一致性误读为诊断有效性。
+
 ## 新版重点：不懂怎么问，也能开始
 
 **[引导式探索（推荐新手）](prompts/guided-exploration.md)** → **[AI 帮你发现下一问](prompts/next-questions.md)** → **[生成完整 Output 报告](prompts/full-report.md)** → **[增量更新与纠错](prompts/update-output.md)**。
