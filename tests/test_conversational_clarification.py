@@ -28,7 +28,7 @@ class HopeBotAdaptationTests(unittest.TestCase):
     def test_clarification_is_optional_not_clinical(self):
         method = (ROOT / FILES[1]).read_text(encoding="utf-8")
         prompt = (ROOT / FILES[2]).read_text(encoding="utf-8")
-        for term in ("自愿", "UNKNOWN", "不适用", "临床", "隐私"):
+        for term in ("本人明确希望", "UNKNOWN", "不适用", "临床", "隐私"):
             self.assertIn(term, method)
         for term in ("不想回答", "NO_MODEL_CHANGE", "RETRACTION"):
             self.assertIn(term, prompt)
