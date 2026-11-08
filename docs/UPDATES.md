@@ -16,6 +16,12 @@ Framework v0.3 增加了官方 `framework/personal_domains.md`、`templates/DOMA
 
 这些均是允许更新的 Markdown；已有 v0.3 私人模板副本的 Updater 在审核 PR 后可以引入，且 **不会触碰 `my/` 或 `custom/`**。新 `docs/JOURNEY.md` 属于公开使用说明，不通过旧版 Updater 自动复制到私人仓库；可直接在线阅读。
 
+## v0.5：连续建模工作流与视觉报告
+
+新增规范覆盖：从闲聊提取可追溯证据、维护可撤回的命题与人物身份登记、整理真实历史问题和候选问题、从私人长篇报告生成个人说明书/视觉稿。相应方法在 `framework/`、提示词在 `prompts/`、空白台账在 `templates/`，均属于官方 Markdown 白名单；用户需要**自愿选择**是否安装/使用，不会自动修改 `my/` 资料。
+
+新手教程 `docs/CONTINUOUS_USE.md`、虚构案例 `examples/fictional_longitudinal_cycle.md` 和工作协定的变化**不会**由旧版 Updater 自动同步；可在线阅读。新流程不提供自动化记忆服务、实际 PPT 引擎或全量历史资料采集。双向题库的 PR #1 仍单独审核，不视为此版本已发布功能。
+
 ## 一句话原理
 
 你只需要创建一次私人仓库。之后当公开 SecondMe-Framework 发布新版，私人仓库可以**定期检查**，并提出一个待你人工审核的 Pull Request（PR）。
@@ -100,7 +106,7 @@ python3 scripts/secondme_updater.py --apply
 
 ```bash
 git add framework/ prompts/ templates/
-python3 scripts/build_manifest.py 0.4.0
+python3 scripts/build_manifest.py 0.5.0
 git add .secondme/framework-manifest.json .secondme/framework-lock.json
 python3 -m unittest discover -s tests -v
 git diff --cached --check
@@ -116,7 +122,7 @@ git diff --cached --check
 
 ## 更新状态说明
 
-- 当前公开仓库自带 v0.4.0 的方法文件清单（Updater 运行程序仍为 v0.2 机制），可供今后新的私人模板副本使用。
+- 当前公开仓库自带 v0.5.0 的方法文件清单（Updater 运行程序仍为 v0.2 机制），可供今后新的私人模板副本使用。
 - 发布后请以实际远端 manifest 和工作流运行状态为准，不要将文档写入等同于所有旧用户已经升级。
 - 基于更老 v0.1 模板建立的仓库，需要先**手动**添加 Updater 文件和基础指纹清单，才能获得后续更新；旧仓库不能自动得知这套新能力。
 - GitHub 定时任务可能延迟、因配置问题失败或因长期无活动而停用；用户仍可以手动运行。
