@@ -18,6 +18,10 @@ This **public repository** hosts reusable prompts, methods, code and fully ficti
 - For evidence, see `framework/evidence_protocol.md`.
 - For competing models and revision, see `framework/longitudinal_reasoning.md`.
 - For complete Markdown reports, see `framework/output_reports.md` and `prompts/full-report.md`.
+- For long-term but user-controlled capture, see `framework/continuous_model_pipeline.md` and `prompts/initialize-private-secondme.md`.
+- Before analyzing multi-person material, enforce `framework/entity_attribution_and_corrections.md`; a user correction must retract all dependent misattributed claims.
+- Keep historical user questions distinct from AI-proposed questions: `framework/question_atlas_method.md`.
+- Never publish a private full report as a deck by default: `framework/report_to_visual.md` and `prompts/create-visual-deck.md`.
 - For individual differences and ontology, see `framework/person_specific_modeling.md` and `framework/semantic_interoperability.md`.
 
 ## Optional WorkBuddy/CodeBuddy support

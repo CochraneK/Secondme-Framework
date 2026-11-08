@@ -10,6 +10,12 @@
 
 **这个方式不会自动建立个人档案。** AI 是否保留聊天记录由你所使用的平台和设置决定；SecondMe Framework 本身不具有跨对话自动读取、长期记忆或自动上传功能。
 
+## v0.5：长期复用的新入口
+
+如果你想像长期私人 SecondMe 一样逐渐积累可追溯的个人资料，先打开 [零代码连续使用指南](CONTINUOUS_USE.md)，复制 [长期协作主控提示词](../prompts/initialize-private-secondme.md)。这套流程会引导你在自愿情况下逐步建立 evidence、模型、问题库与报告，并且**明确核对人物归属、保留纠错历史**；不要求已有多年聊天或先填写固定问卷。
+
+[一次事件归档与 Delta](../prompts/capture-model-delta.md) · [历史问题 Atlas](../prompts/build-question-atlas.md) · [从报告到 PPT](../prompts/create-visual-deck.md)。有真实文件工具并获得授权才执行持久保存；无工具则给可复制 Markdown。
+
 ## 从零持续深入：新的完整路线
 
 [循序探索 → 证据 → 个人化报告 → 增量更新](JOURNEY.md)。可以先试五分钟，再决定是否长期记录；AI 应主动帮助不知道问什么的人逐渐发现问题，而不是要求用户先填完固定清单。

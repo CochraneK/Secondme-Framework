@@ -17,9 +17,19 @@
   <a href="PRIVACY.md">隐私原则</a>
 </p>
 
-<p align="center"><sub>Experimental v0.4 · 中文优先 · MIT License · Privacy-first</sub></p>
+<p align="center"><sub>Experimental v0.5 · 中文优先 · MIT License · Privacy-first</sub></p>
 
 ---
+
+## v0.5：从一次聊天到长期的私人 SecondMe
+
+**[完整零代码路线](docs/CONTINUOUS_USE.md)**：自然交流 → 私人证据 → 可修订的判断 → 历史问题地图 → 充分的人物报告 → 经审核的图鉴 / PPT → 下一次增量更新。
+
+如果你不懂 Git、不知道如何开始，也可以直接**[复制长期 SecondMe 主控提示词](prompts/initialize-private-secondme.md)**，从一件小事聊起；想保存时再用 [一次事件的归档与更正](prompts/capture-model-delta.md)。有旧聊天时使用 [问题目录](prompts/build-question-atlas.md)，有报告时使用 [视觉图鉴提示词](prompts/create-visual-deck.md)。
+
+它**不会**自动读取你没授权的历史聊天，也不承诺一定生成多年深度的人物报告。长期效果依赖可获得的个人材料、持续使用、准确身份归属、反例和本人纠正；没有工具时，只能交付可复制文稿而不能假称已写入仓库。
+
+**已有的 Discover Me × Understand Me 双向题库**仍在独立 [Draft PR #1](https://github.com/CochraneK/Secondme-Framework/pull/1) 审核中，不能当成已合并的正式功能；v0.5 的问题 Atlas 方法可独立使用，未来再做衔接。
 
 ## 新版重点：不懂怎么问，也能开始
 
@@ -44,6 +54,7 @@
 
 | 你的目标 | 推荐入口 |
 | --- | --- |
+| **希望长期积累证据、报告和说明书** | [零代码连续使用指南](docs/CONTINUOUS_USE.md)：从自然聊天到归档、纠错和视觉图鉴，支持无 Git 模式 |
 | **从零开始，不知道该问什么** | [引导式探索提示词](prompts/guided-exploration.md)：AI 每次根据真实回答选择一个问题 |
 | **已有材料，想要全量分析** | [完整 Output 报告提示词](prompts/full-report.md)，支持充分长文、优缺点、反证、纵向修订和专属章节 |
 | **建立长期个人档案** | [Use this template 创建自己的 Private 仓库](https://github.com/CochraneK/Secondme-Framework/generate)，在 `my/` 保存本人资料，`custom/` 保存个性化提示词 |
