@@ -2,7 +2,8 @@
   "files": {
     "framework/adaptive_discovery.md": "22749cf58e3a788496f8900bdeca9ce7c9c2f4bf",
     "framework/agency_and_external_advisors.md": "d6fefca66e10be9a3f61ab5ae8cd00547796fc99",
-    "framework/continuous_model_pipeline.md": "4fd1c4643beb308ae3169c7234f2c0960e727f75",
+    "framework/consentful_conversational_structuring.md": "ed31387428eb090e4acd33919cea5ed46014ff6b",
+    "framework/continuous_model_pipeline.md": "434544b6b836a03b8808558a424e5f04838b6185",
     "framework/entity_attribution_and_corrections.md": "e797ce2f9db5de93beec28a556f6e333c3d92938",
     "framework/evidence_protocol.md": "dfff56c13e6620b139aa746d33b10c9b563c83b2",
     "framework/human_ontology.md": "4aa17b8363e0813d3dead050240d0581966804ed",
@@ -18,6 +19,7 @@
     "framework/semantic_interoperability.md": "03d3a8daf4025956a234b207bb6726bbabb429dd",
     "prompts/build-question-atlas.md": "cbac4694619bf6e0553bd718934d5235e29ff458",
     "prompts/capture-model-delta.md": "0463801cd035dee6c98bfa6e51374fd2bc2a3746",
+    "prompts/clarify-before-claim.md": "2f2ee456c9c8bf2558847ce9e9becb8d491e0d99",
     "prompts/create-visual-deck.md": "881a35c8ca0f72fdf6699ed9ef37be6c717e9749",
     "prompts/full-report.md": "df84ba87404e6fb3c95ebc149e6f0443fa894e1c",
     "prompts/guided-exploration.md": "b2a9ba1049725b1805bc6b731403df8985e4cdb5",
@@ -52,5 +54,5 @@
   },
   "schema": 1,
   "source": "CochraneK/Secondme-Framework",
-  "version": "0.5.0"
+  "version": "0.5.1"
 }
