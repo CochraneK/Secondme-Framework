@@ -16,6 +16,7 @@ This **public repository** hosts reusable prompts, methods, code and fully ficti
 ## Discovery and output
 - For a new user, see `prompts/guided-exploration.md` and `framework/adaptive_discovery.md`.
 - For evidence, see `framework/evidence_protocol.md`.
+- For optional, consent-based clarification of genuinely ambiguous narratives, see `framework/consentful_conversational_structuring.md`; never force a clinical questionnaire or treat missing as a zero.
 - For competing models and revision, see `framework/longitudinal_reasoning.md`.
 - For complete Markdown reports, see `framework/output_reports.md` and `prompts/full-report.md`.
 - For long-term but user-controlled capture, see `framework/continuous_model_pipeline.md` and `prompts/initialize-private-secondme.md`.
