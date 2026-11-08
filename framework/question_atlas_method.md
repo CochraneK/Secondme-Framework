@@ -32,6 +32,6 @@
 
 ## 对接已有双向系统，而非重做固定问卷
 
-Discover Me / Understand Me 的通用问题方法在独立审核中（见仓库 PR #1，未合并前不能把它说成 main 已发布内容）。即使未来合并，也应把“AI 推荐了一个新问题”与“用户实际提出过一个问题”分开保存。54、108、379 等不是所有用户的规定数量、目标分数或效果标准。
+Discover Me / Understand Me 的通用问题方法在独立审核中（见仓库 PR #1，未合并前不能把它说成 main 已发布内容）。即使未来合并，也应把“AI 推荐了一个新问题”与“用户实际提出过一个问题”分开保存。任何数字化题目规模都不是所有用户的规定数量、目标分数或效果标准。
 
 **参照：** [Question Atlas 空白模板](../templates/QUESTION_ATLAS_TEMPLATE.md) · [问题整理提示词](../prompts/build-question-atlas.md) · [自适应探索](adaptive_discovery.md)。
